@@ -163,8 +163,8 @@ rm -rf /root/* \
 /usr/lib/firmware \
 /usr/lib/modules \
 /boot/* \
-/bootstrap \
 /.dockerenv \
 /.dockerinit \
 /usr/share/info/* \
-/README
+/README \
+/bootstrap
