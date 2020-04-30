@@ -162,6 +162,7 @@ rm -rf /root/* \
 /var/cache/pacman/pkg/* \
 /usr/lib/firmware \
 /usr/lib/modules \
+/boot/* \
 /bootstrap \
 /.dockerenv \
 /.dockerinit \
