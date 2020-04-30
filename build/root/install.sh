@@ -149,13 +149,21 @@ fi
 # general cleanup
 yes|pacman -Scc
 pacman --noconfirm -Rns $(pacman -Qtdq) 2> /dev/null || true
-rm -rf /usr/share/locale/*
-rm -rf /usr/share/man/*
-rm -rf /usr/share/gtk-doc/*
-rm -rf /tmp/*
+rm -rf /var/cache/* \
+/var/empty/.cache/* \
+/usr/share/locale/* \
+/usr/share/man/* \
+/usr/share/gtk-doc/* \
+/tmp/*
+
 
 # additional cleanup for base only
-rm -rf /root/*
-rm -rf /var/cache/pacman/pkg/*
-rm -rf /README
-rm -rf /bootstrap
+rm -rf /root/* \
+/var/cache/pacman/pkg/* \
+/usr/lib/firmware \
+/usr/lib/modules \
+/bootstrap \
+/.dockerenv \
+/.dockerinit \
+/usr/share/info/* \
+/README
