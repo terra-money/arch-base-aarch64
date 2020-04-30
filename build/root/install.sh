@@ -158,3 +158,4 @@ rm -rf /tmp/*
 rm -rf /root/*
 rm -rf /var/cache/pacman/pkg/*
 rm -rf /README
+rm -rf /bootstrap
