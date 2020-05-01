@@ -51,7 +51,7 @@ done
 pacman -Sy sed --noconfirm
 
 # configure pacman to retry on failed downloads using curl
-sed -i -e 's~#XferCommand = /usr/bin/curl.*~XferCommand = /usr/bin/curl -L --continue-at - --fail  --connect-timeout 30 --max-time 1200 --retry 5 --retry-delay 0 --retry-max-time 60 --progress-bar -o %o %u~g' /etc/pacman.conf
+#sed -i -e 's~#XferCommand = /usr/bin/curl.*~XferCommand = /usr/bin/curl -L --continue-at - --fail  --connect-timeout 30 --max-time 1200 --retry 5 --retry-delay 0 --retry-max-time 60 --progress-bar -o %o %u~g' /etc/pacman.conf
 
 # configure pacman to not extract certain folders from packages being installed
 # this is done as we strip out locale, man, docs etc when we build the arch-scratch image
