@@ -136,8 +136,8 @@ curl --connect-timeout 5 --max-time 600 --retry 5 --retry-delay 0 --retry-max-ti
 pacman -U /tmp/coreutils.tar.xz --noconfirm
 
 # force re-install of ncurses 6.x with 5.x backwards compatibility (can be removed once all apps have switched over to ncurses 6.x)
-curl --connect-timeout 5 --max-time 600 --retry 5 --retry-delay 0 --retry-max-time 60 -o /tmp/ncurses5-compat.tar.xz -L "https://github.com/binhex/arch-packages/raw/master/compiled/${OS_ARCH}/ncurses5-compat-libs.tar.xz"
-pacman -U /tmp/ncurses5-compat.tar.xz --noconfirm
+#curl --connect-timeout 5 --max-time 600 --retry 5 --retry-delay 0 --retry-max-time 60 -o /tmp/ncurses5-compat.tar.xz -L "https://github.com/binhex/arch-packages/raw/master/compiled/${OS_ARCH}/ncurses5-compat-libs.tar.xz"
+#pacman -U /tmp/ncurses5-compat.tar.xz --noconfirm
 
 # find latest tini release tag from github
 curl --connect-timeout 5 --max-time 600 --retry 5 --retry-delay 0 --retry-max-time 60 -o /tmp/tini_release_tag -L https://github.com/krallin/tini/releases
