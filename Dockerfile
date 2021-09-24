@@ -1,5 +1,6 @@
 FROM scratch
-LABEL org.opencontainers.image.authors="binhex"
+LABEL org.opencontainers.image.authors = "binhex"
+LABEL org.opencontainers.image.source = "https://github.com/binhex/arch-aarch64"
 
 # additional files
 ##################
